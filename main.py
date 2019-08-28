@@ -5,8 +5,16 @@ import utils
 utils.check_version((3,7))
 utils.clear()
 
+bee = "According to all known laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyways. Because bees don't care what humans think is impossible."
+
 print("Hello, my name is Stephanie Davidson!")
 user_name = input("What's your name? ")
+if user_name.strip().lower() == 'barry':
+    user_bee = input('Have you seen The Bee Movie? ')
+    if user_bee.strip().lower() == 'yes':
+        print(bee)
+    else:
+        print('Oh, nevermind then :-)')
 print('Hello ' + user_name + '! My favorite game is Fateful Remedies, coming in 2020.')
 user_game = input("What's your favorite game? ")
 print("I don't think I've played " + user_game + ", but I'm sure it's fun!")
